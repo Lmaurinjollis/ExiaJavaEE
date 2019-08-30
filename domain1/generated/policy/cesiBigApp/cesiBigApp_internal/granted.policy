@@ -1,0 +1,15 @@
+/* AUTOMATICALLY GENERATED ON Sun Apr 07 18:40:28 CEST 2019*/
+/* DO NOT EDIT */
+
+grant {
+  permission javax.security.jacc.EJBMethodPermission "StudentService", "addAuthenticationInformations,Local,java.lang.String,java.lang.String";
+  permission javax.security.jacc.EJBMethodPermission "StudentService", "addStudent,Local,java.lang.String,java.lang.String";
+  permission javax.security.jacc.EJBMethodPermission "StudentService", "save,Local,";
+  permission javax.security.jacc.EJBMethodPermission "StudentDAO", "insert,Local,com.cesi.business.domain.Student";
+};
+
+grant      principal * * {
+  permission javax.security.jacc.EJBRoleRefPermission "StudentService", "**";
+  permission javax.security.jacc.EJBRoleRefPermission "StudentDAO", "**";
+};
+
