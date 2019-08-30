@@ -1,0 +1,13 @@
+/* AUTOMATICALLY GENERATED ON Wed Aug 28 14:58:34 CEST 2019*/
+/* DO NOT EDIT */
+
+grant {
+  permission javax.security.jacc.EJBMethodPermission "RestPaymentValidator", "process,Local,java.lang.String,java.lang.Double";
+  permission javax.security.jacc.EJBMethodPermission "SoapPaymentValidator", "process,Local,java.lang.String,java.lang.Double";
+};
+
+grant      principal * * {
+  permission javax.security.jacc.EJBRoleRefPermission "SoapPaymentValidator", "**";
+  permission javax.security.jacc.EJBRoleRefPermission "RestPaymentValidator", "**";
+};
+

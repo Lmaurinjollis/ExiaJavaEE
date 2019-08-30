@@ -1,0 +1,21 @@
+/* AUTOMATICALLY GENERATED ON Wed Aug 28 14:02:23 CEST 2019*/
+/* DO NOT EDIT */
+
+grant {
+  permission javax.security.jacc.EJBMethodPermission "BankingServiceBean", "createPayment,Local,java.lang.String,java.lang.Double";
+  permission javax.security.jacc.EJBMethodPermission "BankingServiceBean", "lookupAllStoredPayments,Remote,";
+  permission javax.security.jacc.EJBMethodPermission "BankingServiceBean", "lookupStoredPayment,Remote,java.lang.Long";
+  permission javax.security.jacc.EJBMethodPermission "BankingServiceBean", "lookupAllStoredPayments,Local,";
+  permission javax.security.jacc.EJBMethodPermission "BankingServiceBean", "createPayment,Remote,java.lang.String,java.lang.Double";
+  permission javax.security.jacc.EJBMethodPermission "BankingServiceBean", "deleteStoredPayment,Remote,java.lang.Long";
+  permission javax.security.jacc.EJBMethodPermission "BankingServiceBean", "lookupStoredPayment,Local,java.lang.Long";
+  permission javax.security.jacc.EJBMethodPermission "NewSessionBean", "businessMethod,Local,";
+  permission javax.security.jacc.EJBMethodPermission "BankingServiceBean", "createPayment,ServiceEndpoint,java.lang.String,java.lang.Double";
+  permission javax.security.jacc.EJBMethodPermission "BankingServiceBean", "deleteStoredPayment,Local,java.lang.Long";
+};
+
+grant      principal * * {
+  permission javax.security.jacc.EJBRoleRefPermission "NewSessionBean", "**";
+  permission javax.security.jacc.EJBRoleRefPermission "BankingServiceBean", "**";
+};
+
