@@ -1,0 +1,9 @@
+/home/ludwig/NetBeansProjects/webStore/target/generated-sources/jaxws-wsimport/com/store/integration/package-info.java
+/home/ludwig/NetBeansProjects/webStore/target/generated-sources/jaxws-wsimport/com/store/integration/BankingEndpoint.java
+/home/ludwig/NetBeansProjects/webStore/src/main/java/com/store/model/PaymentBean.java
+/home/ludwig/NetBeansProjects/webStore/src/main/java/com/store/business/logic/PaymentValidator.java
+/home/ludwig/NetBeansProjects/webStore/target/generated-sources/jaxws-wsimport/com/store/integration/PaymentOperationResponse.java
+/home/ludwig/NetBeansProjects/webStore/src/main/java/com/store/business/logic/SoapPaymentValidator.java
+/home/ludwig/NetBeansProjects/webStore/target/generated-sources/jaxws-wsimport/com/store/integration/ObjectFactory.java
+/home/ludwig/NetBeansProjects/webStore/target/generated-sources/jaxws-wsimport/com/store/integration/BankingService.java
+/home/ludwig/NetBeansProjects/webStore/target/generated-sources/jaxws-wsimport/com/store/integration/PaymentOperation.java

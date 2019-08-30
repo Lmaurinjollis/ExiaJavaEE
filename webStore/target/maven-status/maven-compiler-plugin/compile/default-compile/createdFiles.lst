@@ -1,0 +1,6 @@
+com/store/integration/BankingService.class
+com/store/integration/package-info.class
+com/store/integration/BankingEndpoint.class
+com/store/integration/PaymentOperationResponse.class
+com/store/integration/PaymentOperation.class
+com/store/integration/ObjectFactory.class

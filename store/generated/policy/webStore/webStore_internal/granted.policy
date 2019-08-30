@@ -1,0 +1,11 @@
+/* AUTOMATICALLY GENERATED ON Tue Aug 27 21:28:57 CEST 2019*/
+/* DO NOT EDIT */
+
+grant {
+  permission javax.security.jacc.EJBMethodPermission "SoapPaymentValidator", "process,Local,java.lang.String,java.lang.Double";
+};
+
+grant      principal * * {
+  permission javax.security.jacc.EJBRoleRefPermission "SoapPaymentValidator", "**";
+};
+

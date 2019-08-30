@@ -1,0 +1,14 @@
+/* AUTOMATICALLY GENERATED ON Tue Aug 27 19:40:57 CEST 2019*/
+/* DO NOT EDIT */
+
+grant {
+  permission javax.security.jacc.EJBMethodPermission "BankingServiceBean", "createPayment,Local,java.lang.String,java.lang.Double";
+  permission javax.security.jacc.EJBMethodPermission "NewSessionBean", "businessMethod,Local,";
+  permission javax.security.jacc.EJBMethodPermission "BankingServiceBean", "createPayment,ServiceEndpoint,java.lang.String,java.lang.Double";
+};
+
+grant      principal * * {
+  permission javax.security.jacc.EJBRoleRefPermission "NewSessionBean", "**";
+  permission javax.security.jacc.EJBRoleRefPermission "BankingServiceBean", "**";
+};
+
