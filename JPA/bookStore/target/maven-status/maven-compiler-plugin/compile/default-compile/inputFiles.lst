@@ -1,0 +1,12 @@
+/home/ludwig/Bureau/Rattrapage_JEE/Code/WS2/bookStore/src/main/java/com/bookstore/model/CategoryBean.java
+/home/ludwig/Bureau/Rattrapage_JEE/Code/WS2/bookStore/src/main/java/com/bookstore/business/persistence/catalog/Publisher.java
+/home/ludwig/Bureau/Rattrapage_JEE/Code/WS2/bookStore/src/main/java/com/bookstore/model/PublisherBean.java
+/home/ludwig/Bureau/Rattrapage_JEE/Code/WS2/bookStore/src/main/java/com/bookstore/business/persistence/catalog/Address.java
+/home/ludwig/Bureau/Rattrapage_JEE/Code/WS2/bookStore/src/main/java/com/bookstore/business/bll/catalogmngmt/BookManagerServiceBean.java
+/home/ludwig/Bureau/Rattrapage_JEE/Code/WS2/bookStore/src/main/java/com/bookstore/business/bll/catalogmngmt/CatalogManagerServiceBean.java
+/home/ludwig/Bureau/Rattrapage_JEE/Code/WS2/bookStore/src/main/java/com/bookstore/business/bll/catalogmngmt/CategoryManagerServiceBean.java
+/home/ludwig/Bureau/Rattrapage_JEE/Code/WS2/bookStore/src/main/java/com/bookstore/business/persistence/catalog/Book.java
+/home/ludwig/Bureau/Rattrapage_JEE/Code/WS2/bookStore/src/main/java/com/bookstore/business/bll/catalogmngmt/CatalogManagerService.java
+/home/ludwig/Bureau/Rattrapage_JEE/Code/WS2/bookStore/src/main/java/com/bookstore/business/bll/catalogmngmt/PublisherManagerServiceBean.java
+/home/ludwig/Bureau/Rattrapage_JEE/Code/WS2/bookStore/src/main/java/com/bookstore/business/persistence/catalog/Category.java
+/home/ludwig/Bureau/Rattrapage_JEE/Code/WS2/bookStore/src/main/java/com/bookstore/model/BookBean.java

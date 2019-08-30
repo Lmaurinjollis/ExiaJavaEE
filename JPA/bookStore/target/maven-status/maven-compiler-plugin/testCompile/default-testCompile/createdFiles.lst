@@ -1,0 +1,4 @@
+com/bookstore/test/EntityManagerInjectionTest.class
+com/bookstore/test/JPQLTest.class
+com/bookstore/test/JPAModelingTest.class
+com/bookstore/test/CrudOperationTest.class

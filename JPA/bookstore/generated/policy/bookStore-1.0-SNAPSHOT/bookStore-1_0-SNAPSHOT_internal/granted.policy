@@ -1,0 +1,32 @@
+/* AUTOMATICALLY GENERATED ON Tue Aug 27 18:22:15 CEST 2019*/
+/* DO NOT EDIT */
+
+grant {
+  permission javax.security.jacc.EJBMethodPermission "CategoryManager", "getchildrenCategories,Local,java.lang.Long";
+  permission javax.security.jacc.EJBMethodPermission "BookManager", "deleteBook,Local,com.bookstore.business.persistence.catalog.Book";
+  permission javax.security.jacc.EJBMethodPermission "CatalogManager", "addBookToCategory,Local,java.lang.Long,java.lang.Long";
+  permission javax.security.jacc.EJBMethodPermission "CatalogManager", "addPublisherToBook,Local,java.lang.Long,java.lang.Long";
+  permission javax.security.jacc.EJBMethodPermission "CategoryManager", "saveCategory,Local,com.bookstore.business.persistence.catalog.Category";
+  permission javax.security.jacc.EJBMethodPermission "CategoryManager", "findCategoryById,Local,java.lang.Long";
+  permission javax.security.jacc.EJBMethodPermission "CatalogManager", "deleteBook,Local,java.lang.Long";
+  permission javax.security.jacc.EJBMethodPermission "CatalogManager", "createPublisher,Local,com.bookstore.business.persistence.catalog.Publisher";
+  permission javax.security.jacc.EJBMethodPermission "PublisherManager", "findPublisherById,Local,java.lang.Long";
+  permission javax.security.jacc.EJBMethodPermission "BookManager", "updateBook,Local,com.bookstore.business.persistence.catalog.Book";
+  permission javax.security.jacc.EJBMethodPermission "BookManager", "findByCriteria,Local,java.lang.String";
+  permission javax.security.jacc.EJBMethodPermission "CatalogManager", "retrieveBooksFromCategory,Local,java.lang.Long";
+  permission javax.security.jacc.EJBMethodPermission "BookManager", "saveBook,Local,com.bookstore.business.persistence.catalog.Book";
+  permission javax.security.jacc.EJBMethodPermission "CatalogManager", "createBook,Local,java.lang.String,java.lang.String,java.util.Date,java.lang.Long";
+  permission javax.security.jacc.EJBMethodPermission "CatalogManager", "selectCategories,Local,java.lang.Long";
+  permission javax.security.jacc.EJBMethodPermission "BookManager", "findBookById,Local,java.lang.Long";
+  permission javax.security.jacc.EJBMethodPermission "CategoryManager", "getRootCategories,Local,";
+  permission javax.security.jacc.EJBMethodPermission "PublisherManager", "savePublisher,Local,com.bookstore.business.persistence.catalog.Publisher";
+  permission javax.security.jacc.EJBMethodPermission "CatalogManager", "createCategory,Local,java.lang.String,java.lang.String,java.lang.Long";
+};
+
+grant      principal * * {
+  permission javax.security.jacc.EJBRoleRefPermission "PublisherManager", "**";
+  permission javax.security.jacc.EJBRoleRefPermission "CatalogManager", "**";
+  permission javax.security.jacc.EJBRoleRefPermission "BookManager", "**";
+  permission javax.security.jacc.EJBRoleRefPermission "CategoryManager", "**";
+};
+
