@@ -1,0 +1,7 @@
+/* AUTOMATICALLY GENERATED ON Thu Aug 29 15:42:08 CEST 2019*/
+/* DO NOT EDIT */
+
+grant      principal * * {
+  permission javax.security.jacc.EJBRoleRefPermission "PaymentProcessor", "**";
+};
+

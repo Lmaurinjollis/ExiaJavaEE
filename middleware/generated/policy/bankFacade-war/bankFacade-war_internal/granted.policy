@@ -1,0 +1,11 @@
+/* AUTOMATICALLY GENERATED ON Thu Aug 29 14:56:32 CEST 2019*/
+/* DO NOT EDIT */
+
+grant {
+  permission javax.security.jacc.EJBMethodPermission "NewSessionBean", "businessMethod,Local,";
+};
+
+grant      principal * * {
+  permission javax.security.jacc.EJBRoleRefPermission "NewSessionBean", "**";
+};
+
