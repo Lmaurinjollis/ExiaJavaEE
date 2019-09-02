@@ -12,6 +12,8 @@ import javax.ejb.EJBException;
 import javax.ejb.SessionBean;
 import javax.ejb.SessionContext;
 import javax.ejb.Stateless;
+import javax.ejb.TransactionAttribute;
+import javax.ejb.TransactionAttributeType;
 import javax.enterprise.context.Dependent;
 import javax.persistence.*;
 
@@ -21,6 +23,7 @@ import javax.persistence.*;
  * Chargé de retrouver une liste d'articles en fonction de critères.
  */
 @Stateless
+@TransactionAttribute(TransactionAttributeType.NOT_SUPPORTED)
 public class ItemsSeeker implements ItemsSeekerLocal, SessionBean {
     
     @PersistenceContext

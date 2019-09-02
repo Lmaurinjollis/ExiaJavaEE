@@ -7,11 +7,17 @@ package com.goodcesi.model;
 
 import com.goodcesi.business.catalogmgmt.CatalogManagerLocal;
 import com.goodcesi.business.domain.Category;
+import com.goodcesi.integration.dao.CrudServiceLocal;
 import com.goodcesi.qualifier.CategoryAdded;
 import com.goodcesi.qualifier.ScopeMonitor;
 import java.util.List;
 import javax.annotation.PostConstruct;
+import javax.ejb.Lock;
+import javax.ejb.LockType;
+import javax.ejb.Schedule;
 import javax.ejb.Singleton;
+import javax.ejb.TransactionAttribute;
+import javax.ejb.TransactionAttributeType;
 import javax.enterprise.context.ApplicationScoped;
 import javax.enterprise.context.RequestScoped;
 import javax.enterprise.event.Observes;
@@ -29,6 +35,8 @@ import javax.inject.Named;
 @ApplicationScoped
 @ScopeMonitor
 @Singleton
+@Lock(LockType.WRITE)
+@TransactionAttribute(TransactionAttributeType.NEVER)
 public class CategoriesCache {
 
     private List<Category> categories;
@@ -45,6 +53,7 @@ public class CategoriesCache {
         categories = catalogManager.getAllCategories();
     }
 
+    @Lock(LockType.READ)
     public List<Category> getCategories() {
         return categories;
     }
@@ -53,4 +62,9 @@ public class CategoriesCache {
         categories.add(cat);
     }
 
+    @Schedule(hour = "*", minute = "*", second = "*/15")
+    public void refreshCategories() {
+        System.out.println("timer");
+        categories = catalogManager.getAllCategories();
+    }
 }

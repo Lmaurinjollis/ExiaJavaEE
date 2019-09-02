@@ -14,6 +14,8 @@ import javax.ejb.EJBException;
 import javax.ejb.SessionBean;
 import javax.ejb.SessionContext;
 import javax.ejb.Stateless;
+import javax.ejb.TransactionAttribute;
+import javax.ejb.TransactionAttributeType;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -34,6 +36,7 @@ import javax.transaction.TransactionScoped;
 
 //@TransactionScoped //scope CDI étendue par la spécification Java des transactions (JTA)
 @Stateless
+@TransactionAttribute(TransactionAttributeType.MANDATORY)
 public class CrudService implements CrudServiceLocal, SessionBean {
     
     @PersistenceContext(unitName = "goodcesiPU")//unitName facultatif
@@ -69,6 +72,7 @@ public class CrudService implements CrudServiceLocal, SessionBean {
     Récupération de l'ensemble  des objets qui ont été persistés en base pour un type donné.
     */
     @Override
+    @TransactionAttribute(TransactionAttributeType.NOT_SUPPORTED)
     public <T> List<T> findAll(Class<T> type){
         //utilisation de la généricité quasi impossible avec JPQL
         //on comprend l'un des avantages d'une API "typée" (criteria) pour exécuter des requêtes JPA

@@ -12,6 +12,7 @@ import javax.inject.Inject;
 import com.goodcesi.integration.dao.CrudServiceLocal;
 import java.io.Serializable;
 import java.rmi.RemoteException;
+import javax.annotation.security.RolesAllowed;
 import javax.ejb.EJBException;
 import javax.ejb.Local;
 import javax.ejb.SessionBean;
@@ -42,6 +43,7 @@ public class CatalogManager implements CatalogManagerLocal, SessionBean {
     
     //Création d'une nouvelle catégorie
     @Override
+    @RolesAllowed("ADMIN")
     public Category saveNewCategory(String title){
         if(title==null||title.trim().isEmpty()){ //le deuxième test vérifie que title ne contient pas que des espaces
             return null;
@@ -77,6 +79,7 @@ public class CatalogManager implements CatalogManagerLocal, SessionBean {
                 managedItem.add(managedCat);//Item est l'entité proprio de la relation
             }
           }
+          //throw new RuntimeException();
           return managedItem;//embarque son id généré ainsi que le champ version initialisé
         }
     }
