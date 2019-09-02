@@ -12,6 +12,7 @@ import com.goodcesi.qualifier.MethodInvocationMonitor;
 import com.goodcesi.qualifier.ScopeMonitor;
 import java.io.Serializable;
 import java.util.Date;
+import javax.annotation.security.RolesAllowed;
 import javax.ejb.LocalBean;
 import javax.ejb.Stateful;
 import javax.enterprise.context.Conversation;
@@ -99,6 +100,7 @@ public class OrderBean {//un SFSB n'a pas besoin d'implémenter Serializable pou
         return "orderValidation";
     }
     
+    @RolesAllowed("BUYER")
     public String pay(){
         if(ccNumber.length()==10){
             User buyer = currentUser.getUser();//on récupère l'entité JPA correspondant à l'utilisateur authentifié
